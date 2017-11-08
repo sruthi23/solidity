@@ -26,4 +26,4 @@ function kill() public
     selfdestruct(creator);
 }
 
-> - trying to understand the working of "Ballot" contract in the documentations
+> - trying to understand the working of "Ballot" contract in the documentation
