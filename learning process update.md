@@ -23,7 +23,7 @@
 			 
 
                 
-         contract Membership{
+       contract Membership{
 				 address public person;
 				  uint c=0;
 				  address[10] member_list;    
