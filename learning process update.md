@@ -5,6 +5,8 @@
 + tried out my own sample contracts, those are :
 
 	 
+	 
+	 
 	contract Transaction{
 	                     address _sender;
 	                     uint _amount;
