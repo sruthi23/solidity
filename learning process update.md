@@ -5,7 +5,7 @@
 + tried out my own sample contracts, those are :
 
 	 
-	contract Transaction{
+	- contract Transaction{
 	                     address _sender;
 	                     uint _amount;
 	                     mapping (address => uint) balance;
@@ -21,19 +21,20 @@
 		} 
 			 
 			 
+
                 
-                  contract Membership{
-					    address public person;
-					    uint c=0;
-					    address[10] member_list;    
-				       function Membership(){
-				                     person = msg.sender;
-				                     member_list[c] = person;
-				                     c+=1;
-	                  }
-                     function newMember(address _person) returns (uint){
-                                    if(_person == msg.sender) return;
-				    else{
+         - contract Membership{
+				 address public person;
+				  uint c=0;
+				  address[10] member_list;    
+				  function Membership(){
+				             person = msg.sender;
+				             member_list[c] = person;
+				               c+=1;
+	                           }
+                                 function newMember(address _person) returns (uint){
+                                        if(_person == msg.sender) return;
+				           else{
 						uint i =0;
 					        while(c<=member_list.length){
 							while(i<=c){
@@ -42,8 +43,8 @@
 				 				    }
 				         	         }
 			                         }
-			           }
-                      }  
+			                }
+                               }  
 		 } 
 					 
 
