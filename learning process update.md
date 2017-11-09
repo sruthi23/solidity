@@ -7,7 +7,7 @@
 	 
 	 
 	 
-	contract Transaction{
+	>- contract Transaction{
 	                     address _sender;
 	                     uint _amount;
 	                     mapping (address => uint) balance;
@@ -25,7 +25,7 @@
 			 
 
                 
-       contract Membership{
+       >- contract Membership{
 				 address public person;
 				  uint c=0;
 				  address[10] member_list;    
