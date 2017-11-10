@@ -5,9 +5,9 @@
 + tried out my own sample contracts, those are :
 ```
 contract Transaction{         
-address _sender;  
-uint _amount;  
-mapping (address => uint) balance;  
+	address _sender;  
+	uint _amount;  
+	mapping (address => uint) balance;  
 function Transaction(){  
 _sender = msg.sender;  
 }  
