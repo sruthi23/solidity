@@ -17,10 +17,10 @@ contract Transaction{
 				balance[_receiver]+=_amount;  
 			  } else return;  
 	}  
-}``` 
+}
 
 			 
-```
+
 contract Membership{
 	 address public person;
          uint c=0;
