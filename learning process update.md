@@ -31,18 +31,18 @@ contract Membership{
 	               c+=1;
 	 }
         function newMember(address _person) returns (uint){
-                         if(_person == msg.sender) return;
-	                 else{
-				uint i =0;
-			        while(c<=member_list.length){
-		 				while(i<=c){
-							if (member_list[i]!=_person){
-							 		    c++;											        	            member_list[c]=_person;
-				 			    }
-				                 }
-			         }
-		           }
-        }  
- }``` 
+                    if(_person == msg.sender) return;
+	            else{
+			uint i =0;
+			while(c<=member_list.length){
+		 		while(i<=c){
+					if (member_list[i]!=_person){
+						c++;											        	                 member_list[c]=_person;
+				 	    }
+				    }
+			   }
+		    }
+             }  
+     } 
 					 
 
