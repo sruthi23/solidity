@@ -7,7 +7,7 @@
 	 
 	 
 	 
-	contract Transaction{  
+	contract Transaction{         
 	address _sender;  
 	uint _amount;  
 	mapping (address => uint) balance;  
