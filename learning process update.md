@@ -8,7 +8,7 @@
 	 
 	 
 	contract Transaction{  
-	                     address _sender;
+	address _sender;
 	                     uint _amount;
 	                     mapping (address => uint) balance;
 		             function Transaction(){
