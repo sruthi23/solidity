@@ -8,12 +8,12 @@
 	 
 	 
 	contract Transaction{  
-	address _sender;
-	                     uint _amount;
-	                     mapping (address => uint) balance;
-		             function Transaction(){
-				               _sender = msg.sender;
-		                }    
+	address _sender;  
+	uint _amount;  
+	mapping (address => uint) balance;  
+	function Transaction(){  
+	_sender = msg.sender;  
+	}    
 			 function amountTransfer(address _receiver,uint _amount{
 				                  if(_sender.balance >= _amount){
 				                     balance[msg.sender]-= _amount;
