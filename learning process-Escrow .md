@@ -91,7 +91,7 @@ contract Arbitersetup is Adminsetup{
       }
   }
 } 
- 
+ ```
 +  references
 1. https://en.wikipedia.org/wiki/Escrow
 2. https://blog.localethereum.com/how-our-escrow-smart-contract-works/
