@@ -2,9 +2,9 @@
 
 + working on a Escrow contract 
 ```
->pragma solidity ^0.4.0;
->contract Adminsetup{  
->address admin = msg.sender;     
+ pragma solidity ^0.4.0;
+contract Adminsetup{  
+address admin = msg.sender;     
      modifier onlyAdmin{         
          require(msg.sender==admin);
          _;
