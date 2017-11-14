@@ -1,8 +1,8 @@
 ﻿## What I did & doing
 
 + working on a Escrow contract 
->> #####pragma solidity ^0.4.0;
->#####contract Adminsetup{  
+>##### pragma solidity ^0.4.0;
+>##### contract Adminsetup{  
 >```
 >address admin = msg.sender;     
      modifier onlyAdmin{         
