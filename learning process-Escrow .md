@@ -3,12 +3,12 @@
 + working on a Escrow contract 
 ```
  pragma solidity ^0.4.0;
-contract Adminsetup{  
-address admin = msg.sender;     
+ contract Adminsetup{  
+ address admin = msg.sender;     
      modifier onlyAdmin{         
-         require(msg.sender==admin);
-         _;
-    }    
+            require(msg.sender==admin);
+            _;
+      }    
     function newAdmin(address _newadmin) public
         onlyAdmin{
             admin = _newadmin;
@@ -17,37 +17,31 @@ address admin = msg.sender;
 }
 
 contract Arbitersetup is Adminsetup{
-    
-    address arbiter;
-    function Arbitersetup(address _arbiter) public{
+        address arbiter;
+        function Arbitersetup(address _arbiter) public{
         if(msg.sender == admin){
             arbiter = _arbiter;
         }
-        
-    } 
+     } 
 }
-    
+
     contract Escrow is Adminsetup,Arbitersetup{
     
     // address arbiter;
-    
-    
+  
     address buyer;
     address seller;
     
     // address admin = msg.sender;
     
-    
     bool sellerflag = false;
     bool buyerflag = false;
     function Escrow(address _seller,address _buyer) public {
-        
-        
+              
         /*if(admin == msg.sender){
             
             arbiter = _arbiter;
         }*/
-        
         
         seller = _seller;
         buyer = _buyer;
@@ -60,8 +54,7 @@ contract Arbitersetup is Adminsetup{
         }
         
     }
-    */
-    /*function arbiterSetup(address _arbiter) public {
+    function arbiterSetup(address _arbiter) public {
         
         if(admin == msg.sender){
             
@@ -74,10 +67,7 @@ contract Arbitersetup is Adminsetup{
         if(msg.sender == seller){
             arbiter.transfer(_amount);
             sellerflag = true;
-    
-        }
-        
-        
+            }   
     }
     function payToSeller(uint _amount,bool flag) public{
         if(sellerflag == true){
