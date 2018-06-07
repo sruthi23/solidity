@@ -13,7 +13,7 @@ contract Greeter {
     creator = msg.sender;
     greeting = _greeting;
   }
-  function greet()constant public returns(string) {
+  function greet()constant public returns(string) {N
     return greeting;
   }
 
